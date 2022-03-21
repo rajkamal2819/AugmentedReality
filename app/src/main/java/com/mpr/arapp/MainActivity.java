@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
         homeTransaction.replace(R.id.main_content,new HomeFragment());
         homeTransaction.commit();
